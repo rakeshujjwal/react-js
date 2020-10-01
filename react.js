@@ -19,5 +19,5 @@ function freeze_gif(i) {
 window.onload = function() {
   setTimeout(function() {
     [].slice.apply(document.images).filter(is_gif_image).map(freeze_gif);
-  }, 5000);
+  }, 100000);
 }
