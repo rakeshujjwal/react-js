@@ -1,6 +1,7 @@
 
 
-function freeze_gif(i) {
+function freeze_gif(i,j) {
+  var wid = j;
   var c = document.createElement('canvas');
   var w = c.width = i.width;
   var h = c.height = i.height;
@@ -10,7 +11,7 @@ function freeze_gif(i) {
   } catch(e) { 
     for (var j = 0, a; a = i.attributes[j]; j++)
       c.setAttribute(a.name, a.value);
-    i.parentNode.replaceChild(c, i);
+    i.parentNode.replaceChild(c, i,j);
   }
 }
 
