@@ -15,8 +15,3 @@ function freeze_gif(i,j) {
   }
 }
 
-window.onload = function() {
-  setTimeout(function() {
-    [].slice.apply(document.images).filter(is_gif_image).map(freeze_gif);
-  }, 10000);
-}
