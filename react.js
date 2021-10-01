@@ -1,6 +1,4 @@
-function is_gif_image(i) {
-  return /^(?!data:).*\.gif/i.test(i.src);
-}
+
 
 function freeze_gif(i) {
   var c = document.createElement('canvas');
@@ -19,5 +17,5 @@ function freeze_gif(i) {
 window.onload = function() {
   setTimeout(function() {
     [].slice.apply(document.images).filter(is_gif_image).map(freeze_gif);
-  }, 100000);
+  }, 10000);
 }
