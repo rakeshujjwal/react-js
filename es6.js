@@ -1,11 +1,7 @@
 var name = "Global scope"
 
 
-function great(){
-var name = "Local scope"   
 
-console.log(name);
-}
 
 great();
 
