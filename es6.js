@@ -4,14 +4,6 @@ var name = "Global scope"
 
 
 great();
-
-//block scope it has {} these signs and evary thing in it is block scope
-var num = 10
-if (num === 10){
-    var num =20;
-    console.log(num)
-}
-
 console.log(num)
 
 function greet(name="default", age=12){
