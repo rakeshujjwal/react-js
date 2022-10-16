@@ -1,6 +1,3 @@
-var name = "Global scope"
-
-
 
 
 function greet(name="default", age=12){
