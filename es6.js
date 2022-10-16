@@ -3,9 +3,6 @@ var name = "Global scope"
 
 
 
-great();
-console.log(num)
-
 function greet(name="default", age=12){
 console.log(name,age)
 }    
